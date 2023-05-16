@@ -32,8 +32,18 @@ class ClockPatience
 
             for (int i = 0; i < 13; i++)
             {
-               
+                Stack<string> currentValue = new Stack<string>();
+                while (piles[i].Count > 0)
+                {
+                    currentValue.Push(piles[i].Pop()); // Remove all values from piles[i] and store them in currentValue
+                }
+
                 piles[i].Push(cards[i]); // Add the new value
+
+                while (currentValue.Count > 0)
+                {
+                    piles[i].Push(currentValue.Pop()); // Put the values from currentValue back into piles[i] to maintain the order
+                }
             }
         }
 
