@@ -1,0 +1,15 @@
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\bin\Debug\net6.0\ClockPatienceGame.exe
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\bin\Debug\net6.0\ClockPatienceGame.deps.json
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\bin\Debug\net6.0\ClockPatienceGame.runtimeconfig.json
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\bin\Debug\net6.0\ClockPatienceGame.dll
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\bin\Debug\net6.0\ClockPatienceGame.pdb
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.csproj.AssemblyReference.cache
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.AssemblyInfoInputs.cache
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.AssemblyInfo.cs
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.csproj.CoreCompileInputs.cache
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.dll
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\refint\ClockPatienceGame.dll
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.pdb
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ClockPatienceGame.genruntimeconfig.cache
+D:\School\Repositories\ClockPatience\ClockPatienceGame\ClockPatienceGame\obj\Debug\net6.0\ref\ClockPatienceGame.dll
