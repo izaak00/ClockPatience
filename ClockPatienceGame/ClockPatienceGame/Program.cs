@@ -30,6 +30,8 @@ class ClockPatience
         {
             string[] cards = deck.Split(' ');
 
+            Array.Reverse(cards); // Reverse the order of the cards
+
             for (int i = 0; i < 13; i++)
             {
                 Stack<string> currentValue = new Stack<string>();
