@@ -8,18 +8,20 @@ namespace ClockPatienceGame
 {
     class Game
     {
-        private List<Stack<string>> piles;
+        //private List<Stack<string>> piles;
+        List<Queue<string>> piles;
         private int exposedCards;
         private string currentCard;
 
         public Game(List<string> decks)
         {
-            piles = new List<Stack<string>>();
+            //piles = new List<Stack<string>>();
+            piles = new List<Queue<string>>();
             exposedCards = 0;
 
             // Create the initial piles
             for (int i = 0; i < 13; i++)
-                piles.Add(new Stack<string>());
+                piles.Add(new Queue<string>());
 
             // Distribute cards to piles
             foreach (string deck in decks)
@@ -32,28 +34,11 @@ namespace ClockPatienceGame
 
                 for (int i = 0; i < 13; i++)
                 {
-                    Stack<string> currentValue = new Stack<string>();   /* this is the current card value
-                    if this was not implemented, the order of the cards will be reversed in that current
-                    pile. pile[0] will have 4 cards. Every new card will take position[0] and old card
-                    will take the next available position[1]. This would not result in the expected output*/
-
-                    while (piles[i].Count > 0)
-                    {
-                        currentValue.Push(piles[i].Pop());
-                        //pushing values in current value and popping from piles[i]
-                    }
-
-                    piles[i].Push(cards[i]); //pushing new value in piles[i]. In this instance piles will only have one value which is the new value
-
-                    while (currentValue.Count > 0)
-                    {
-                        piles[i].Push(currentValue.Pop());
-                        // populating piles once again with the old values to keep the supposed order
-                    }
+                    piles[i].Enqueue(cards[i]); //pushing new value in piles[i]. In this instance piles will only have one value which is the new value   
                 }
             }
 
-            currentCard = piles[12].Pop(); // Top card of the 'king' pile
+            currentCard = piles[12].Dequeue(); // Top card of the 'king' pile
             exposedCards++;
         }
 
@@ -63,12 +48,12 @@ namespace ClockPatienceGame
             while (true)
             {
                 int currentPileIndex = GetPileIndex(currentCard); //gets the index form the current card that was popped from pile
-                Stack<string> currentPile = piles[currentPileIndex];
+                Queue<string> currentPile = piles[currentPileIndex];
 
                 if (currentPile.Count == 0)
                     break;
 
-                currentCard = currentPile.Pop(); // current card is removed from that pile
+                currentCard = currentPile.Dequeue(); // current card is removed from that pile
                 exposedCards++;
             }
         }
